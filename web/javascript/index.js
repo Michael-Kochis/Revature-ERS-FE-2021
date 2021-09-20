@@ -1,4 +1,4 @@
-// import {sayHi} from './sayHi'
+import {sayHi} from './sayHi.js'
 
 function fakeForm() {
     let root = document.getElementById('root');
@@ -74,7 +74,7 @@ function setTextField(name, parentNode) {
 
 window.onload = function() {
     let root = document.getElementById('root');
-    root.innerHTML = "";
+    root.innerHTML = sayHi("World!");
 
     navBar();
     fakeForm();
