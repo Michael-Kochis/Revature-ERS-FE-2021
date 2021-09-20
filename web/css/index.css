@@ -2,8 +2,26 @@ button {
     color: white;
     background-color: blue;
     border-radius: 1em;
+    font-size: 1.5rem;
+}
+
+#lrButtonBar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#navBar {
+    color: navy;
+    background-color: aquamarine;
+    width: 95%;
+    font-size: 2rem;
 }
 
 #root {
+    display: flex;
+    flex-flow: column nowrap;
     font-family: 'Mukta', sans-serif;
 }
