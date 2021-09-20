@@ -5,6 +5,18 @@ button {
     font-size: 1.5rem;
 }
 
+input {
+    width: 15%;
+    margin: 0 auto;
+}
+
+#fakeForm {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: aliceblue;
+}
+
 #lrButtonBar {
     display: flex;
     flex-flow: row nowrap;
