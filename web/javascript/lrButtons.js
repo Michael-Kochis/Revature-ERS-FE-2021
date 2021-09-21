@@ -21,7 +21,7 @@ export function lrButtons(parentNode) {
 
 function loginClick() {
     console.log("Login clicked");
-    var user = document.getElementById("username").nodeValue
+    var user = document.getElementById("username").innerText;
     console.log(user);
 }
 
