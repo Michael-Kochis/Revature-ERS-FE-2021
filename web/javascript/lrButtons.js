@@ -1,3 +1,5 @@
+import bcrypt from "bcrypt";
+
 export function lrButtons(parentNode) {
     let root = document.getElementById('root');
 
@@ -23,6 +25,13 @@ function loginClick() {
     console.log("Login clicked");
     let user = document.getElementById("username").value;
     console.log(user);
+    bcrypt.hash(user, 12, (err, hash) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log(hash);
+    })
 }
 
 function registerClick() {
