@@ -1,5 +1,7 @@
 //import {sayHi} from './sayHi.js'
 
+import {lrButtons} from "./lrButtons";
+
 function fakeForm() {
     let root = document.getElementById('root');
     let fakeForm = document.createElement('div');
@@ -7,7 +9,7 @@ function fakeForm() {
 
     setTextField("username", fakeForm);
     setPassField(fakeForm);
-    setLoginAndRegisterButtons(fakeForm);
+    lrButtons(fakeForm);
 
     root.appendChild(fakeForm);
 }
@@ -25,25 +27,6 @@ function navBar() {
 
     navBar.appendChild(homeLink);
     root.appendChild(navBar);
-}
-
-function setLoginAndRegisterButtons(parentNode) {
-    let root = document.getElementById('root');
-
-    let lrButtonBar = document.createElement('div');
-    lrButtonBar.id = "lrButtonBar"
-
-    let loginButton = document.createElement("button");
-    loginButton.id = "loginButton";
-    loginButton.innerText = "Login";
-
-    let registerButton = document.createElement("button");
-    registerButton.id = "registerButton";
-    registerButton.innerText = "Register";
-
-    lrButtonBar.appendChild(loginButton);
-    lrButtonBar.appendChild(registerButton);
-    parentNode.appendChild(lrButtonBar)
 }
 
 function setPassField(parentNode) {

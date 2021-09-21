@@ -12,6 +12,10 @@ button {
     font-size: 1.5rem;
 }
 
+button:hover {
+    background-color: blanchedalmond;
+}
+
 input {
     width: 15%;
     margin: 0 auto;
