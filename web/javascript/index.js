@@ -1,6 +1,6 @@
 //import {sayHi} from './sayHi.js'
 
-import {lrButtons} from "./lrButtons";
+import {lrButtons} from "./lrButtons.js";
 
 function fakeForm() {
     let root = document.getElementById('root');
