@@ -1,8 +1,5 @@
 {
   "name": "Revature-ERS-FE-2021",
   "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "bcrypt": "^5.0.1"
-  }
+  "dependencies": {}
 }
