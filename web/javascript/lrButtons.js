@@ -6,9 +6,7 @@ export function lrButtons(parentNode) {
 
     let loginButton = document.createElement("button");
     loginButton.id = "loginButton";
-    loginButton.onclick = function loginClick() {
-        loginButton.innerText = "Log Out";
-    };
+    loginButton.onclick = loginClick;
     loginButton.innerText = "Login";
 
     let registerButton = document.createElement("button");
